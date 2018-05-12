@@ -1,0 +1,19 @@
+/* pages/ercode/ercode.wxss */
+.my_canvas{
+ border: 1px solid black;
+ margin-top: 80rpx;
+}
+.canvas-v{
+ display: flex;
+ justify-content: center
+}
+page{
+  background-color: #2e3132
+}
+.btn_submit{
+  width: 600rpx;
+  border-radius:25px;
+  background-color:#fe5454;
+  color: #f0f0f0; 
+  margin-top: 100rpx;
+}

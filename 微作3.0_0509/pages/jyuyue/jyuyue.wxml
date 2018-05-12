@@ -1,0 +1,38 @@
+<view class='querenyue-container'>
+  <view class='querenyue-head'>
+    <text class='querenyue-head-text'>预约详情</text>
+  </view>
+  <view class='querenyue-items'>
+    <!-- 上半部分头像及名字 -->
+    <view class='querenyue-info'>
+      <view class='info-img-name'>
+        <image class='info-img' src='{{yorder.avatar}}'></image>
+        <text class='info-name'>{{yorder.user_name}}</text>
+      </view>
+      <view class='info-button'>
+        <button class='copy-num' bindtap='copyNumber' data-phone='{{yorder.phone}}'>复制号码</button>
+      </view>
+    </view>
+
+    <view class='querenyue-detail'>
+      <view class='detail-more'>
+        <text class='detail-more-name'>姓名:</text>
+        <text class='detail-your-name'>{{yorder.name}}</text>
+      </view>
+
+      <view class='detail-more'>
+        <text class='detail-more-name'>预约项目:</text>
+        <text class='detail-your-name'>{{yorder.xiangmu}}</text>
+      </view>
+
+      <view class='detail-more'>
+        <text class='detail-more-name'>手机号:</text>
+        <text class='detail-your-name'>{{yorder.phone}}</text>
+      </view>
+    </view>
+    <form bindsubmit='confirm' report-submit="ture">
+      <button class='querenyue-sure' wx:if="{{yorder.status==0}}"  form-type="submit" >确认预约</button>
+      <button class='querenyue-had' wx:if="{{yorder.status==1}}">已确认</button>
+    </form>
+  </view>
+</view>

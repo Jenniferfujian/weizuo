@@ -1,0 +1,140 @@
+page {
+  background-color: #f4f4f4;
+}
+.my-follow
+{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+}
+.follow-top
+{
+  display: flex;
+  justify-content: space-between;
+}
+.my-follow-text
+{
+  font-size: 30rpx;
+  padding-left: 26rpx;
+  padding-top: 30rpx;
+  color: #333333;
+  padding-bottom: 24rpx;
+}
+.follow-jiantou
+{
+  margin-top: 34rpx;
+  padding-right: 36rpx;
+  width: 16rpx;
+  height: 26rpx;
+  padding-left: 16rpx;
+}
+
+.follow-image-container
+{
+  display: flex;
+  flex-direction: row;
+  margin-left: 22rpx;
+}
+.follow-image
+{
+display: flex;
+flex-direction: column;
+margin-right: 42rpx;
+
+}
+.follow-image-name
+{
+  width: 110rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.follow-image image
+{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%
+}
+.follow-image text
+{
+  font-size: 24rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.follow-image text
+{
+  font-size: 24rpx;
+  color: #9b9b9b;
+  padding-top: 18rpx;
+}
+/* 下半部分 */
+.zhuye-works-container
+{
+   display: flex; 
+   justify-content: center; 
+}
+
+.zhuye-works-items {
+  background-color: #fff;
+  margin-top: 24rpx;
+   margin-bottom: 10rpx;  
+  /* border-radius: 20rpx; */
+   width: 100%; 
+}
+
+.zhuye-works-user
+{
+  width: 100%;
+  height: 110rpx;
+  display: flex;
+align-items: center;
+}
+.zhuye-works-user image
+{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-left: 26rpx;
+  margin-right: 20rpx;
+  border: 4px solid rgba(254, 84, 84, 0.1);
+}
+.zhuye-works-user text
+{
+  font-size: 30rpx;
+color: #333333;
+font-weight: 600;
+}
+
+.zhuye-works-img {
+   display: flex; 
+  width: 100%;
+  height: 358rpx;
+  margin: 0 auto;
+   /* padding-top: 24rpx;  */
+  /* margin-top: 24rpx; */
+   border-radius: 10rpx; 
+}
+
+
+.zhuye-works-txt {
+  width: 636rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx; 
+  margin-left: 28rpx;
+}
+
+.zhuye-works-title {
+  font-weight: bold;
+  font-size: 30rpx;
+  padding-top: 6rpx;
+  padding-bottom: 8rpx;
+}
+
+.zhuye-works-sub {
+  padding-top: 10rpx;
+  color: #9b9b9b;
+  font-size: 26rpx;
+  padding-bottom: 36rpx;
+}

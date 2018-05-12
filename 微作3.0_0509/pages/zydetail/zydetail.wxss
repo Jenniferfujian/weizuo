@@ -1,0 +1,166 @@
+page
+{
+  /* background-color: #ededed; */
+}
+.dianzan-top
+{
+  z-index: 10;
+  position: fixed;
+  top: 0; 
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+  width: 100%;
+  height: 88rpx;
+  background-color: #fff; 
+  display: flex;
+  flex-direction: row; 
+}
+
+.dianzan-image
+{
+  display: flex;
+  margin: auto 0;
+  margin-left: 36rpx;
+  /* background-color: red; */
+}
+
+
+.dianzan-image image
+{
+    /* margin-top: 50%; */
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 14rpx;
+  border-radius: 50%
+}
+.dianzan-button
+{
+  display: flex;
+  margin: auto 0;
+  width: 130rpx;
+  height: 52rpx;
+  border-radius: 20px;
+  border: 1px solid #97aad0;
+}
+.dianzan-button text
+{
+  font-size: 24rpx;
+  color: #97aad0;
+  line-height: 52rpx;
+}
+
+
+.dianzan-like
+{
+  width: 40rpx;
+  height: 40rpx;
+  margin: auto 0;
+   /* padding-left: 14rpx; */
+  padding-right: 8rpx; 
+}
+
+.zydetail-head-bg
+{
+  background-color: #ededed;
+  width: 748rpx;
+  /* height: 268rpx; */
+  margin-bottom: 20rpx;
+  border-left: 1rpx solid #888888;
+  border-right: 1rpx solid #888888;
+  margin-top: 90rpx;
+  padding-bottom: 20rpx;
+}
+
+.zydetail-head
+{
+  width: 610rpx;
+  height: 200rpx;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  margin-top: -110rpx;
+}
+.head-title
+{
+  margin-left: 50rpx;
+  font-size: 34rpx;
+  color: #333333;
+padding-top: 24rpx;
+font-weight: bold;
+}
+.head-subtitle
+{
+  margin-left: 50rpx;
+  width: 90%;
+  font-size: 24rpx;
+  color: #888888;
+  margin-top: 10rpx;
+}
+
+.img_item {
+  width: 48%;
+  margin: 1%;
+  display: inline-block;
+  vertical-align: top;
+}
+.yuyuedingzhi
+{
+width: 80rpx;
+height: 80rpx;
+position: fixed;
+border-radius: 50%;
+bottom: 60rpx;
+right: 50rpx;
+}
+.yuyuedingzhi image
+{
+  width: 60rpx;
+  height: 60rpx; 
+  margin-top: 15rpx; 
+}
+
+.yuyuedingzhi-item-btn
+{
+  width: 100rpx;
+  height: 100rpx;
+  /* background-color: #fe5454;  */
+  background-color: #b2b2b2; 
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  padding: 0px;
+  box-shadow: 2rpx 4rpx 10rpx 6rpx rgba(235, 99, 99, 0.2); 
+  opacity: 0.90;
+}
+
+.works-title-container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 50rpx;
+  padding-top: 28rpx;
+}
+.works-title-container image
+{
+  width: 20px;
+  height: 20px;
+}
+
+.zhuye-works-title {
+  font-weight: bold;
+  font-size: 30rpx;
+}
+.zhuye-like
+{
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.zhuye-like-text
+{
+   font-size: 30rpx;
+   color: #888888;
+}
+
+

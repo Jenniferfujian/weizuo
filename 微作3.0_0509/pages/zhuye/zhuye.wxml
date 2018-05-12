@@ -1,0 +1,107 @@
+<!--头像部分 -->
+<view>
+  <!-- <view class="personal_info ">
+    <view>
+
+      <image class='bg' src='../../images/mine-bg1.png'>
+
+        <view class="personal_info_v1 center">
+          <image mode='aspectFill' src="{{userModel.avatarUrl}}" />
+        </view>
+
+        <view class='user-info-up'>
+
+          <view class='user-login-con' wx:if="{{uid==1}}">
+            <button class='user-login' open-type='getUserInfo' bindgetuserinfo='login'>登录</button>
+          </view>
+          <view wx:else class='user-info-detail'>
+            <view class="personal_info_name center">
+              <view class='info_name_con'>
+                <text>{{userModel.nickName}}</text>
+              </view>
+              <image class='personal_info_ma' bindtap='erWeiCode' src='/images/erweima-ico1.png'></image>
+            </view>
+            <view class='personal_info_edit center' wx:if="{{userModel.title!=null}}">
+              <text>{{userModel.title}}</text>
+            </view>
+            <view class='personal_info_edit center' wx:else>
+              <text></text>
+            </view>
+          </view>
+
+          <view class='zuopin-yuyue'>
+            <view class='zuopin'>
+              <view class='zuopin-num'>{{zpCount}}</view>
+              <view class='zuopin-txt'>作品</view>
+            </view>
+            <view class='yuyue'>
+              <view class='yuyue-num'>{{redu}}0000</view>
+              <view class='yuyue-txt'>热度</view>
+            </view>
+          </view>
+        </view>
+
+      </image>
+    </view>
+  </view> -->
+  <view class='zhuye-userinfo-con'>
+    <image class='zhuye-bg' src='/images/mine-bg2.png'></image>
+    <view class='image-up'>
+      <view class='image-ma'>
+        <view class='user-image-container'>
+          <image class='user-image' src='{{userModel.avatarUrl}}'></image>
+        </view>
+        <view class='user-login-con' wx:if="{{uid==1}}">
+            <button class='user-login' open-type='getUserInfo' bindgetuserinfo='login'>登录</button>
+        </view>
+        <view wx:else bindtap='erWeiCode' class='erweima-container'>
+          <image class='erweima' src='/images/erweima-ico2.png'></image>
+        </view>
+      </view>
+      <view class='user-name-container'>
+        <text class='user-name'>{{userModel.nickName}}</text>
+      </view>
+      <view wx:if="{{userModel.title!=null}}">
+        <text class='user-intro'>{{userModel.title}}</text>
+      </view>
+          <view wx:else>
+        <text class='user-intro'>暂无简介</text>
+      </view>
+      <view class='zuopn-redu'>
+        <view>
+          <text class='zuopin-num'>{{zpCount}}</text>
+          <text class='zuopin-name'>作品集</text>
+        </view>
+        <view>
+          <text class='zuopin-num'>{{redu}}</text>
+          <text class='zuopin-name'>点赞</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 下半部分 -->
+  <block wx:for="{{albumModels}}" wx:key="id">
+    <view class='zhuye-works-container'>
+      <view class='zhuye-works-items'>
+        <view class='works-img-con'>
+          <image mode='widthFix' class='zhuye-works-img' src="{{item.head_url}}" bindtap='albumDetail' data-id="{{item.id}}"></image>
+        </view>
+        <view class='zhuye-works-txt'>
+          <text class='zhuye-works-title'>{{item.title}}</text>
+          <text class=' zhuye-works-sub '>{{item.description}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <view class='yuyuedingzhi' wx:if="{{userModel.ison==1}}">
+    <!-- <view class='yuyuedingzhi-item'> -->
+    <button class='yuyuedingzhi-item-btn' open-type='getUserInfo' bindgetuserinfo='yuyue'>
+      <image src='/images/yuyue-ico1.png'></image>
+    </button>
+    <!-- </view> -->
+  </view>
+  <!-- <button class='yuyuedingzhi'>预约</button> -->
+  <!-- <loading hidden="{{hiddenLoading}}">加载中</loading> -->
+</view>

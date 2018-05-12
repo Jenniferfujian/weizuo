@@ -1,0 +1,33 @@
+<!--首页页面 -->
+<view>
+  <canvas canvas-id='myCanvas' style='width:200%;height:2000px' class='my_canvas'></canvas>
+  <view class='zppic'>
+    <text class='home_text'>头像</text>
+    <image bindtap='chooseImage' src='{{imageSource}}'></image>
+  </view>
+
+  <form bindsubmit='formBindSubmit'>
+    <view class='zpname'>
+      <text class='home_text'>昵称</text>
+      <input wx:if="{{nickName=='null'}}" class='input_name' name='nickName' placeholder='请输入昵称' value='{{nickName}}'> </input>
+      <input wx:else class='input_name' name='nickName' placeholder='请输入昵称（15字以内）' value='{{nickName}}'> </input>
+    </view>
+
+    <view class='zpname'>
+      <text class='home_text'>简介</text>
+      <input maxlength='60' wx:if="{{title=='null'}}" class='input_name' name='title' placeholder='请输入简介（15字以内）'> </input>
+      <input placeholder='请输入简介（15字以内）' maxlength='60' wx:else class='input_name' name='title' value='{{title}}'> </input>
+    </view>
+
+
+    <view>
+      <button class='btn_save' formType='submit'>保存</button>
+    </view>
+
+    <view>
+      <button class='btn_cancel' bindtap='cancal'>取消</button>
+    </view>
+  </form>
+
+
+</view>

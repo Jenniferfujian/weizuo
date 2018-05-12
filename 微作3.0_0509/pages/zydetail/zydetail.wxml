@@ -1,0 +1,54 @@
+<view class='dianzan-top'>
+  <view class='dianzan-image'>
+    <block wx:for="{{zanModels}}" wx:key="id">
+      <image class='image-item' src="{{item.avatarUrl}}"></image>
+    </block>
+    <image bindtap='moreImg'  src='/images/more-img.png'></image>
+  </view>
+  <button open-type='getUserInfo' bindgetuserinfo='zan' class='dianzan-button'>
+    <image class='dianzan-like' src='/images/like-00.png'></image>
+    <text>{{zan}}</text>
+  </button>
+</view>
+
+<view style="display:none">
+  <image wx:for="{{images}}" wx:key="id" id="{{item.id }}" src="{{item.url}}" bindload="onImageLoad">
+  </image>
+</view>
+
+<scroll-view scroll-y="true" bindscrolltolower="loadImages" style='height:100vh'>
+  <view class='zydetail-head-bg'>
+    <view class='works-title-container'>
+      <text class='zhuye-works-title'>#{{albumModel.title}}</text>
+      <!-- <view class='zhuye-like'>
+        <image src='../../images/like-0.png'></image>
+        <text class='zhuye-like-text'>{{zan}}</text>
+      </view> -->
+    </view>
+    <view class='head-subtitle'>
+      <text>{{albumModel.description}}</text>
+    </view>
+  </view>
+  <view class='yuyuedingzhi'>
+    <!-- <view class='yuyuedingzhi-item'> -->
+    <!-- <button open-type='getUserInfo' bindgetuserinfo='zan' wx:if="{{!zanStatus}}" class='yuyuedingzhi-item-btn'>
+      <image src='/images/like-2.png'></image>
+    </button>
+    <button wx:else class='yuyuedingzhi-item-btn' style='background-color: #fe5454' open-type='getUserInfo' bindgetuserinfo='zan'>
+      <image src='/images/like-2.png'></image>
+    </button> -->
+    <!-- </view> -->
+  </view>
+  <view style="width:100%">
+    <view class="img_item">
+      <view wx:for="{{col1}}" wx:key="id">
+        <image src="{{item.url}}" style='width:100%' mode='widthFix' bindtap='imagePreview' data-url='{{item.url}}'></image>
+      </view>
+    </view>
+    <view class="img_item">
+      <view wx:for="{{col2}}" wx:key="id">
+        <image src="{{item.url}}" style="width:100%" mode='widthFix' bindtap='imagePreview' data-url='{{item.url}}'></image>
+      </view>
+    </view>
+  </view>
+</scroll-view>

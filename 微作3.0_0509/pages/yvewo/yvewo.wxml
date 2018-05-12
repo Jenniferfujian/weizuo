@@ -1,0 +1,44 @@
+<view class='querenyue-container'>
+  <view class='querenyue-head'>
+    <text class='querenyue-head-text'>{{text}}</text>
+  </view>
+
+  <block wx:for="{{orders}}" wx:key='id'>
+  <view class='querenyue-items'>
+    <!-- 上半部分头像及名字 -->
+    <view class='querenyue-info'>
+      <view class='info-img-name'>
+        <image class='info-img' src='{{item.avatar}}'></image>
+        <text class='info-name'>{{item.user_name}}</text>
+      </view>
+      <view class='info-button'>
+        <button class='copy-num' bindtap='copyNumber' data-phone='{{item.phone}}'>复制号码</button>
+      </view>
+    </view>
+
+    <view class='querenyue-detail'>
+      <view class='detail-more'>
+        <text class='detail-more-name'>姓名:</text>
+        <text class='detail-your-name'>{{item.name}}</text>
+      </view>
+
+      <view class='detail-more'>
+        <text class='detail-more-name'>预约项目:</text>
+        <text class='detail-your-name'>{{item.xiangmu}}</text>
+      </view>
+
+      <view class='detail-more'>
+        <text class='detail-more-name'>手机号:</text>
+        <text class='detail-your-name'>{{item.phone}}</text>
+      </view>
+    </view>
+       <form bindsubmit='confirm' data-index='{{index}}' data-yorder_no='{{item.yorder_no}}' report-submit="ture">
+    <button class='querenyue-sure' wx:if="{{item.status==0}}"   form-type="submit" >确认预约</button>
+    <button class='querenyue-had' wx:if="{{item.status==1}}"  >已确认</button>
+    <button class='querenyue-past' wx:if="{{item.status==-1}}" >已过期</button>
+    </form>
+  </view>
+    </block>
+
+   <loading hidden="{{hiddenLoading}}">加载中</loading>
+</view>

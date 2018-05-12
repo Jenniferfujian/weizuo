@@ -1,0 +1,241 @@
+page {
+  background-color: #f4f4f4;
+}
+
+/* 上半部分 */
+.zhuye-userinfo-con
+{
+  display: flex;
+  flex-direction: column;
+}
+.zhuye-bg
+{
+  width: 100%;
+  height: 182rpx;
+}
+.image-up
+{
+  width: 100%;
+  height: 300rpx;
+  background-color: #fff;
+}
+.image-ma
+{
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.user-image
+{
+  width: 146rpx;
+  height: 146rpx;
+  border-radius: 50%;
+  border: 12rpx solid rgba(255,255,255, 0.3);
+  margin-top: -66rpx;
+  margin-left: 28rpx;
+}
+.erweima-container
+{
+width: 86rpx;
+height: 60rpx;
+border: 1px solid #d8d8d8;
+border-radius: 10rpx;
+text-align: center;
+line-height: 64rpx;
+margin-left: 428rpx;
+margin-top: 16rpx;
+}
+.erweima
+{
+  width: 32rpx;
+  height: 32rpx;
+}
+.user-name-container
+{
+  width: 240rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.user-name
+{
+font-size: 32rpx;
+font-weight: bold;
+padding-left: 38rpx;
+padding-top: 14rpx;
+color: #2b2b2b;
+}
+.user-intro
+{
+  font-size: 24rpx;
+  color: #bdbdbd;
+  padding-left: 38rpx;
+  padding-top: 30rpx;
+}
+.zuopn-redu
+{
+  display: flex;
+  flex-direction: row;
+  margin-left: 38rpx;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+.zuopin-num
+{
+  color: #303030;
+   font-weight:600; 
+  padding-right: 20rpx;
+}
+.zuopin-name
+{
+  color: #bfbfbf;
+  padding-right: 100rpx;
+}
+
+/* 下半部分 */
+
+
+.zhuye-works-container
+{
+   display: flex; 
+   justify-content: center; 
+}
+
+.zhuye-works-items {
+  background-color: #fff;
+  margin-top: 24rpx;
+   margin-bottom: 10rpx;  
+  /* border-radius: 20rpx; */
+   /* width: 690rpx;  */
+width: 100%;
+}
+
+
+.zhuye-works-img {
+   display: flex; 
+  /* width: 640rpx; */
+  width: 100%;
+  height: 358rpx;
+  margin: 0 auto;
+   padding-top: 24rpx; 
+   /* border-radius: 10rpx;  */
+}
+
+
+.zhuye-works-txt {
+  width: 636rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx; 
+  margin-left: 28rpx;
+}
+
+.zhuye-works-title {
+  font-weight: bold;
+  font-size: 30rpx;
+  /* padding:20rpx; */
+  padding-top: 20rpx;
+  padding-bottom: 16rpx;
+}
+
+.zhuye-works-sub {
+  /* padding-top: 10rpx; */
+  color: #9b9b9b;
+  font-size: 26rpx;
+  padding-bottom: 36rpx;
+}
+
+
+.yuyuedingzhi
+{
+width: 80rpx;
+height: 80rpx;
+/* background-color: #fe5454; */
+position: fixed;
+border-radius: 50%;
+bottom: 80rpx;
+left: 20rpx;
+}
+
+
+.yuyuedingzhi-item
+{
+ display: flex;
+ justify-content: center; 
+ height: 100%;
+}
+
+.yuyuedingzhi image
+{
+   width: 60rpx;
+  height: 60rpx; 
+  margin-top: 15rpx; 
+}
+
+.yuyuedingzhi-item-btn
+{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  padding: 0px;
+  box-shadow: 2rpx 4rpx 10rpx 6rpx rgba(235, 99, 99, 0.2);
+}
+
+.user-login-con
+{
+  display: flex;
+  width: 224rpx;
+  height: 100rpx;
+   /* background-color: red;   */
+  margin-left: 220rpx;
+}
+
+.user-login
+{
+  width: 150rpx;
+  height: 50rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  color: #fe5454;
+  border:1px solid #fe5454;
+  border-radius: 50rpx;
+  font-size: 24rpx;
+
+  line-height: 50rpx;
+}
+/* button::after{
+border: none;
+} */
+
+.works-title-container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.works-title-container image
+{
+  width: 20px;
+  height: 20px;
+}
+
+.zhuye-works-title {
+  font-weight: bold;
+  font-size: 30rpx;
+}
+.zhuye-like
+{
+padding-right: 10px;
+  vertical-align: middle;
+}
+.zhuye-like-text
+{
+  font-size: 30rpx;
+  color: #fe5454;
+}
+

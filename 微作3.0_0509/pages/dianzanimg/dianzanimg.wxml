@@ -1,0 +1,11 @@
+<!--pages/dianzanimg/dianzanimg.wxml-->
+<view class='dianzan-num'>
+  <text>{{zanModels.length}}人赞过</text>
+</view>
+<view class='dianzanimg-box'>
+  <view  class='dianzanimg'>
+    <block wx:for="{{zanModels}}">
+    <image src='{{item.avatarUrl}}'></image>
+    </block>
+  </view>
+</view>

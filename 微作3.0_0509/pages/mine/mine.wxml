@@ -1,0 +1,66 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <!--头像部分 -->
+  <view class="personal_info ">
+    <image class='bg' src='../../images/mine-bg1.png'></image>
+    <view class="personal_info_container">
+      <view>
+        <view class='personal-info-img'>
+          <view class="personal_info_v1">
+            <image mode='aspectFill' src="{{userInfo.avatarUrl}}" />
+          </view>
+        </view>
+        <view class='personal_info_name'>
+          <text>{{userInfo.nickName}}</text>
+        </view>
+        <view class='personal_info_jianjie'>
+          <text wx:if="{{userInfo.title==null}}"></text>
+          <text wx:else>{{userInfo.title}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 下半部分 -->
+  <view class="btn">
+    <view class="btn_items page_flex">
+      <image class='mine-img-left' src="../../images/mine-yuyue.png" />
+      <view class="btn_items_text">开启预约定制</view>
+      <view class="btn_items_blank_jieshou"></view>
+      <view class="switch {{isOn ? 'toggle-on' : 'toggle-off'}}" style="background-color:{{isOn ? '#ff6e55' : '#ddd'}}" bindtap="tapSwitch">
+      </view>
+    </view>
+
+    <view class="btn_items page_flex" bindtap="erCode">
+      <image class='mine-img-left' src="../../images/mine-zuopinma.png" />
+      <view class="btn_items_text">我的作品码</view>
+      <view class="btn_items_blank-1"></view>
+      <image class='mine-img-rl' src='../../images/erweima.png'></image>
+      <image class='mine-img-right' src='../../images/mine-jiantou.png'></image>
+    </view>
+
+    <view class="btn_items page_flex" bindtap="zhuYe">
+      <image class='mine-img-left' src="../../images/mine-zhuye.png" />
+      <view class="btn_items_text">我的主页</view>
+      <view class="btn_items_blank"></view>
+      <image class='mine-img-right' src='../../images/mine-jiantou.png'></image>
+    </view>
+
+
+
+    <view class="btn_items page_flex" bindtap="edit">
+      <image class='mine-img-left' src="../../images/mine-shezhi.png" />
+      <view class="btn_items_text">设置个人信息</view>
+      <view class="btn_items_blank"></view>
+      <image class='mine-img-right' src='../../images/mine-jiantou.png'></image>
+    </view>
+
+    <view wx:if='{{isOn}}' class="btn_items page_flex" bindtap="yveWo">
+      <image class='mine-img-left' src="../../images/mine-yuyuewo.png" />
+      <view class="btn_items_text">预约我的</view>
+      <view class="btn_items_blank"></view>
+      <image class='mine-img-right' src='../../images/mine-jiantou.png'></image>
+    </view>
+  </view>
+  <loading hidden="{{hiddenLoading}}">加载中</loading>
+</view>

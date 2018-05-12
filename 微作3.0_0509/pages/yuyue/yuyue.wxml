@@ -1,0 +1,26 @@
+<view>
+  <form bindsubmit='btnSubmit'  report-submit="ture"  >
+    <view class='zpname'>
+      <text class='home_text'>姓名</text>
+      <input class='input_name' name="name" value='{{name}}' placeholder='请输入您的称呼' > </input>
+    </view>
+
+    <view class='zpname'>
+      <text class='home_text'>联系方式</text>
+      <input class='input_name' name="phone" value='{{phone}}' placeholder='请填写手机号或微信号'> </input>
+      <button class='get-phone'open-type="getPhoneNumber" bindgetphonenumber='phone'>获取手机号</button>
+    </view>
+
+    <view class='zpname'>
+      <text class='home_text'>预约项目</text>
+      <input class='input_name' name="xiangmu"  placeholder='请输入预约内容'> </input>
+    </view>
+    <button wx:if="{{clickAble}}" class='yuyue-buttom' form-type="submit" >提交预约</button>
+    <button wx:else class='yuyue-buttom'  style='background-color:#fff' >提交预约</button>
+  </form>
+  <view class='tips'>
+    <text>
+     预约是作者根据作品展示的内容，接受技能服务的渠道。
+    </text>
+  </view>
+</view>

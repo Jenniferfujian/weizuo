@@ -1,0 +1,20 @@
+/**app.wxss**/
+.container {
+  margin: 0; 
+  padding: 0; 
+  font-family: PingFangSC-Regular, sans-serif;
+  font-size: 30rpx;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+} 
+.center {
+  display: flex;
+    /* justify-content: center;   */
+} 
+.page_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}

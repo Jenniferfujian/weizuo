@@ -1,0 +1,130 @@
+/* pages/querenyue/querenyue.wxss */
+
+page {
+  height: 100%;
+  /* background-color: #f7f7f7; */
+  background-color: rgba(235, 99, 99, 0.008);
+}
+
+.querenyue-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 26rpx;
+}
+
+.querenyue-head {
+  font-size: 28rpx;
+  color: #a8a8a8;
+  padding-left: 32rpx;
+  padding-bottom: 15rpx;
+}
+
+.querenyue-items {
+  border-radius: 10rpx;
+  height: 508rpx;
+  width: 690rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 2rpx 4rpx 10rpx 6rpx rgba(235, 99, 99, 0.1);
+  margin-top: 20rpx;
+}
+
+.querenyue-info {
+  display: flex;
+  flex-direction: row;
+  width: 690rpx;
+  height: 140rpx;
+  /* border: 1px solid #e4e4e4; */
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.info-img {
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 32rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+}
+
+.info-name {
+  display: inline-block;
+  font-size: 30rpx;
+  color: #eb6363;
+  font-weight: bold;
+  padding-bottom: 50rpx;
+  vertical-align: middle;
+  /* text-align: center; */
+}
+
+.copy-num {
+  position: absolute;
+  right: 60rpx;
+  width: 160rpx;
+  height: 48rpx;
+  background-color: #fff;
+  border: 1px solid #eb6363;
+  font-size: 20rpx;
+  color: #eb6363;
+  border-radius: 20px;
+  margin-top: 50rpx;
+}
+
+.querenyue-detail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+}
+
+.detail-more {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 32rpx;
+}
+
+.detail-more-name {
+  font-size: 36rpx;
+  padding-left: 32rpx;
+  color: #d6d6d6;
+}
+
+.detail-your-name {
+  position: absolute;
+  left: 242rpx;
+  font-size: 32rpx;
+  color: #6f6f6f;
+  /* line-height: 32rpx; */
+  vertical-align: middle;
+}
+
+.querenyue-sure {
+  width: 200rpx;
+  height: 68rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background-color: #eb6363;
+  border-radius: 50rpx;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.querenyue-had {
+  width: 200rpx;
+  height: 68rpx;
+  font-size: 30rpx;
+  /* color: #fff;
+  background-color: #eb6363; */
+  border-radius: 50rpx;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.querenyue-past {
+  width: 200rpx;
+  height: 68rpx;
+  font-size: 30rpx;
+  /* color: #fff; */
+  /* background-color: #eb6363; */
+  border-radius: 50rpx;
+  vertical-align: middle;
+  text-align: center;
+}

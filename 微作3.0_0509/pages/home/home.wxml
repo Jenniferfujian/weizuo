@@ -1,0 +1,75 @@
+<view class='my-follow'>
+  <view class='follow-top'>
+    <text class='my-follow-text'>我的关注</text>
+    <view>
+      <text class='my-follow-text'>全部</text>
+      <image class='follow-jiantou' src='/images/mine-jiantou.png'></image>
+    </view>
+  </view>
+  <scroll-view scroll-x style="width: 100%">
+    <view class='follow-image-container'>
+      <view class='follow-image'>
+        <image src='/images/3.png'></image>
+        <view class='follow-image-name'>
+          <text>白武广屎11</text>
+        </view>
+      </view>
+      <view class='follow-image'>
+        <image src='/images/3.png'></image>
+        <view class='follow-image-name'>
+          <text>白武广屎11</text>
+        </view>
+      </view>
+      <view class='follow-image'>
+        <image src='/images/3.png'></image>
+        <view class='follow-image-name'>
+          <text>白武广屎11</text>
+        </view>
+      </view>
+      <view class='follow-image'>
+        <image src='/images/3.png'></image>
+        <view class='follow-image-name'>
+          <text>白武广屎11</text>
+        </view>
+      </view>
+      <view class='follow-image'>
+        <image src='/images/3.png'></image>
+        <view class='follow-image-name'>
+          <text>白武广屎11</text>
+        </view>
+      </view>
+      <view class='follow-image'>
+        <image src='/images/3.png'></image>
+        <view class='follow-image-name'>
+          <text>白武广屎11</text>
+        </view>
+      </view>
+      <view class='follow-image'>
+        <image src='/images/3.png'></image>
+        <view class='follow-image-name'>
+          <text>白武广屎11</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<block wx:for="{{albumModels}}" wx:key="id">
+  <view class='zhuye-works-container'>
+    <view class='zhuye-works-items'>
+      <view class='zhuye-works-user'>
+        <view>
+          <image src='/images/3.png'></image>
+        </view>
+        <text>会飞的猪</text>
+      </view>
+      <view class='works-img-con'>
+        <image mode='widthFix' class='zhuye-works-img' src="{{item.head_url}}" bindtap='albumDetail' data-id="{{item.id}}"></image>
+      </view>
+      <view class='zhuye-works-txt'>
+        <text class='zhuye-works-title'>{{item.title}}</text>
+        <text class=' zhuye-works-sub '>{{item.description}}</text>
+      </view>
+    </view>
+  </view>
+</block>

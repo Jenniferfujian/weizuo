@@ -1,0 +1,94 @@
+/* pages/yuyue/yuyue.wxss */
+
+.zppic {
+  height: 150rpx;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.home_text {
+  font-size: 30rpx;
+  padding: 40rpx;
+}
+
+.zppic image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+
+.zpname {
+  height: 150rpx;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #f0f0f0;
+}
+.get-phone
+{
+  width: 156rpx;
+  height: 60rpx;
+  font-size: 20rpx;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60rpx;
+   border-radius:0;
+  /* padding-right: 8rpx; */
+}
+
+.input_name {
+  font-size: 30rpx;
+  text-align: right;
+  margin-right: 20rpx;
+}
+
+.radio-group {
+  margin-right: 40rpx;
+}
+
+.yuyue-xingbie text {
+  font-size: 30rpx;
+}
+
+.yuyue-buttom {
+  /* width: 600rpx;
+  height: 96rpx;
+  margin-top: 50px;
+  background-color: #fe5454;
+  font-size: 36rpx;
+  color: #f0f0f0;
+  text-align: center;
+  vertical-align:middle; */
+  /* display: table-cell; */
+
+  width: 80%;
+  border:1px solid #f0f0f0;
+  border-radius:5px; 
+  background-color:#fe5454;
+  color: #f0f0f0; 
+  margin-top: 80rpx;
+}
+.btn_cancel{
+  width: 80%;
+  border:1px solid #f0f0f0;
+   border-radius:5px; 
+  /* background-color:#fe5454; */
+  color: #333333; 
+  margin-top: 40rpx;
+}
+
+.tips{
+  width: 80%;
+  position:relative;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 24rpx;
+  color: #bfbfbf;  
+}

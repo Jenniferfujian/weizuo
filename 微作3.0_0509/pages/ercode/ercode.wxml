@@ -1,0 +1,6 @@
+<view>
+  <view class='canvas-v'>
+   <canvas canvas-id='myCanvas' style='width:86%;height:850rpx' class='my_canvas'></canvas>
+   </view>
+  <button class='btn_submit' bindtap='save'>保存到本地</button>
+</view>

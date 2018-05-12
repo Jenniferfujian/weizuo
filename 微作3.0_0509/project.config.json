@@ -1,0 +1,181 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.7.0",
+	"appid": "wx7b2519aa0e131474",
+	"projectname": "%E5%BE%AE%E4%BD%9C3.00509",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "2",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "zanwo",
+					"pathName": "pages/zanwo/zanwo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wozan",
+					"pathName": "pages/wozan/wozan",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "yvewo",
+					"pathName": "pages/yvewo/yvewo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "woyve",
+					"pathName": "pages/woyve/woyve",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "saomiao",
+					"pathName": "pages/saomiao/saomiao",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "liuyan",
+					"pathName": "pages/liuyan/liuyan",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "metoo",
+					"pathName": "pages/metoo/metoo",
+					"query": ""
+				},
+				{
+					"id": 8,
+					"name": "yuyue",
+					"pathName": "pages/yuyue/yuyue",
+					"query": ""
+				},
+				{
+					"id": 9,
+					"name": "wozan",
+					"pathName": "pages/wozan/wozan",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "woyve",
+					"pathName": "pages/woyve/woyve",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "woyve",
+					"pathName": "pages/woyve/woyve",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "jyuyue",
+					"pathName": "pages/jyuyue/jyuyue",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "jyuyue",
+					"pathName": "pages/jyuyue/jyuyue",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "j",
+					"pathName": "pages/jyuyue/jyuyue",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "tianjia",
+					"pathName": "pages/tianjia/tianjia",
+					"query": ""
+				},
+				{
+					"id": 16,
+					"name": "zhuye",
+					"pathName": "pages/zhuye/zhuye",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "detail",
+					"pathName": "pages/zydetail/zydetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "infoedit",
+					"pathName": "pages/infoedit/infoedit",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": "uid=4"
+				},
+				{
+					"id": -1,
+					"name": "edit",
+					"pathName": "pages/editalbum/editalbum",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "edit",
+					"pathName": "pages/zydetail/zydetail",
+					"query": ""
+				},
+				{
+					"id": 23,
+					"name": "zhuye",
+					"pathName": "pages/zhuye/zhuye",
+					"query": ""
+				}
+			]
+		}
+	}
+}
